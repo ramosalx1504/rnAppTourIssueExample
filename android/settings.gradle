@@ -1,0 +1,5 @@
+rootProject.name = 'pagerAndroid'
+include ':react-native-app-tour'
+project(':react-native-app-tour').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-app-tour/android')
+
+include ':app'

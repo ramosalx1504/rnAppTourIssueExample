@@ -26,7 +26,7 @@ class index extends Component {
 			});
 
 			AppTour.ShowSequence(appTourSequence);
-		}, 1500);
+		}, 3500);
 	}
 	render() {
 		return (
@@ -35,7 +35,9 @@ class index extends Component {
 				initialPage={0}>
 				<View style={styles.pageStyle} key="1">
 					<Text>First page</Text>
-					<ShowButton addShowMark={ t => this.showTargets.push(t) }/>
+					<Text>With AndroidPager Example</Text>
+					<Text>Not work.</Text>
+					<ShowButton addShowMark={ t => t && this.showTargets.push(t) }/>
 				</View>
 				<View style={styles.pageStyle} key="2">
 					<Text>Second page</Text>
